@@ -5,7 +5,7 @@
 # Function: initialize_system()
 # ==========================================
 initialize_system() {
-    echo "--- Initialisation de l'infrastructure KNH ---"
+    echo "--- Initialisation KNH Infrastructure ---"
 
     directories=("active_logs" "archived_logs" "reports")
 
