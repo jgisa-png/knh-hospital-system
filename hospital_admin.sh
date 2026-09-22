@@ -29,4 +29,6 @@ secure_data() {
     echo "File permissions:"
     ls -l active_logs
     echo "active_logs is now owner-only."
+    chmod 600 active_logs/*.log 2>/dev/null
 }
+
