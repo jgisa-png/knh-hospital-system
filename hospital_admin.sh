@@ -18,3 +18,15 @@ initialize_system() {
         fi
     done
 }
+
+# Member 2 - Security Lead
+secure_data() {
+    echo "Securing the active_logs directory..."
+    chmod 700 active_logs
+    chmod 600 active_logs/*.log 2>/dev/null
+    echo "Directory permissions:"
+    ls -ld active_logs
+    echo "File permissions:"
+    ls -l active_logs
+    echo "active_logs is now owner-only."
+}
