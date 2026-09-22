@@ -21,6 +21,10 @@ initialize_system() {
 
 # Member 2 - Security Lead
 secure_data() {
+    if [ ! -d active_logs ]; then
+        echo "active_logs directory not found. Run initialize_system first."
+        return 1
+    fi
     echo "Securing the active_logs directory..."
     chmod 700 active_logs
     chmod 600 active_logs/*.log 2>/dev/null
