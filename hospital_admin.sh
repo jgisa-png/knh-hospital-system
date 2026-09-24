@@ -36,3 +36,7 @@ secure_data() {
     chmod 600 active_logs/*.log 2>/dev/null
 }
 
+# Member 3 (the Orchestrator)
+initialize_system 
+secure_data
+echo"Sytem Environment Secured on $(date)"
